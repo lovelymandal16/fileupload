@@ -322,7 +322,7 @@
                     "application/pdf"
                   ],
                   "buttonText": "Attach",
-                  "type": "file",
+                  "type": "file[]",
                   "enabled": true,
                   "visible": true
                 }
