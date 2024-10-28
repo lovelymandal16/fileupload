@@ -319,7 +319,7 @@ function inputDecorator(field, element) {
       input.pattern = emailPattern;
     }
     if (input.multiple) {
-    //  input.setAttribute('multiple', 'multiple');
+      field.typt = 'file[]';
     }
     setConstraintsMessage(element, field.constraintMessages);
     element.dataset.required = field.required;
