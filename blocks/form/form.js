@@ -318,9 +318,9 @@ function inputDecorator(field, element) {
     if (input.type === 'email') {
       input.pattern = emailPattern;
     }
-    if (input.multiple) {
-      field.typt = 'file[]';
-    }
+    // if (input.multiple) {
+    //   field.typt = 'file[]';
+    // }
     setConstraintsMessage(element, field.constraintMessages);
     element.dataset.required = field.required;
   }
