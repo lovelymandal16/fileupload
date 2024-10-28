@@ -305,7 +305,7 @@
           }
         },
         {
-          "title": "File Attachment",
+          "title": "File Attachment Lovely",
           "id": "file-input",
           "plugins": {
             "xwalk": {
