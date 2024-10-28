@@ -295,8 +295,8 @@ function inputDecorator(field, element) {
         input.checked = field.value === input.value;
       }
     } else {
-      //input.multiple = field.type === 'file[]';
-      input.multiple = field.properties?.allowMultiple;
+      input.multiple = field.type === 'file[]';
+      //input.multiple = field.properties?.allowMultiple;
     }
     if (field.required) {
       input.setAttribute('required', 'required');
