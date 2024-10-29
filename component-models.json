@@ -1307,12 +1307,6 @@
           },
           {
             "component": "boolean",
-            "name": "allowMultiple",
-            "label": "Allow multiple file attachments",
-            "valueType": "boolean"
-          },
-          {
-            "component": "boolean",
             "name": "hideTitle",
             "label": "Hide title",
             "valueType": "boolean"
@@ -1350,6 +1344,13 @@
             "valueType": "boolean"
           }
         ]
+      },
+      {
+        "component": "boolean",
+        "name": "allowMultiple",
+        "label": "Allow multiple file attachments",
+        "valueType": "boolean",
+        "collapsible": false
       },
       {
         "component": "container",
