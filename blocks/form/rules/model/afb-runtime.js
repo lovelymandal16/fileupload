@@ -1020,10 +1020,10 @@ const Constraints = {
                 value = valid ? res[0] : inputVal;
                 break;
             case 'file':
-                // res = checkFile(inputVal instanceof Array ? inputVal[0] : inputVal);
-                // valid = res.valid;
-                // value = res.value;
-                // break;
+                res = checkFile(inputVal instanceof Array ? inputVal[0] : inputVal);
+                valid = res.valid;
+                value = res.value;
+                break;
             case 'file[]':
                 res = partitionArray(inputVal, checkFile);
                 valid = res[1].length === 0;

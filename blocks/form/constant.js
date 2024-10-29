@@ -2,7 +2,7 @@ export const fileAttachmentText = 'Attach';
 export const dragDropText = 'Drag and Drop To Upload';
 
 export const DEFAULT_THANK_YOU_MESSAGE = 'Thank you for your submission.';
-//export const submitBaseUrl = 'https://webhook.site/ba983027-a94b-4c9c-b376-c4b1c2768b1e';
+export const submitBaseUrl = 'https://webhook.site/ba983027-a94b-4c9c-b376-c4b1c2768b1e';
 export const defaultErrorMessages = {
   accept: 'The specified file type not supported.',
   maxFileSize: 'File too large. Reduce size and try again.',
@@ -19,7 +19,7 @@ export const defaultErrorMessages = {
 // eslint-disable-next-line no-useless-escape
 export const emailPattern = '([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9]{2,4})?';
 
-let submitBaseUrl = '';//https://webhook.site/ba983027-a94b-4c9c-b376-c4b1c2768b1e
+//let submitBaseUrl = '';//https://webhook.site/ba983027-a94b-4c9c-b376-c4b1c2768b1e
 
 export function setSubmitBaseUrl(url) {
   submitBaseUrl = url;
