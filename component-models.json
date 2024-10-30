@@ -1342,6 +1342,12 @@
             "name": "readOnly",
             "label": "Read-only",
             "valueType": "boolean"
+          },
+          {
+            "component": "text",
+            "name": "buttonText",
+            "label": "Button Title",
+            "valueType": "string"
           }
         ]
       },
