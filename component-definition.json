@@ -321,7 +321,8 @@
                     "text/*",
                     "application/pdf"
                   ],
-                  "buttonText": "Attach 1",
+                  "buttonText": "Attach",
+                  "dragDropText": "Drag and Drop To Upload", 
                   "type": "file",
                   "enabled": true,
                   "visible": true

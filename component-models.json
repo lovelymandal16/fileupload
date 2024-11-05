@@ -1348,6 +1348,12 @@
             "name": "buttonText",
             "label": "Button Title",
             "valueType": "string"
+          },
+          {
+            "component": "richtext",
+            "name": "dragDropText",
+            "label": "Drag Drop Text",
+            "valueType": "string"
           }
         ]
       },

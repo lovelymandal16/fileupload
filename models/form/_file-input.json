@@ -17,7 +17,7 @@
                                 "text/*",
                                 "application/pdf"
                             ],
-                            "buttonText": "Attach 1",
+                            "buttonText": "Attach",
                             "type": "file",
                             "enabled": true,
                             "visible": true
