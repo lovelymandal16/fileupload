@@ -1381,6 +1381,12 @@
             "name": "tooltip",
             "label": "Short description",
             "valueType": "string"
+          },
+          {
+            "component": "boolean",
+            "name": "alwaysShowShortDescription",
+            "label": "Always show short description",
+            "valueType": "boolean"
           }
         ]
       },
