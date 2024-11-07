@@ -160,7 +160,7 @@ export function createShortDescription(fd) {
   const div = document.createElement('div');
   div.className = 'field-short-description';
   div.setAttribute('aria-live', 'polite');
-  div.innerHTML = fd.properties?.tooltip;
+  div.innerHTML = fd.tooltip ? fd.tooltip : '';
   div.id = `${fd.id}-short-description`;
   return div;
 }
