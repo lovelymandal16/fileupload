@@ -5,6 +5,7 @@ import {
   stripTags,
   checkValidation,
   toClassName,
+  createShortDescription,
 } from './util.js';
 import GoogleReCaptcha from './integrations/recaptcha.js';
 import componentDecorator from './mappings.js';
@@ -68,7 +69,7 @@ const createTextArea = withFieldWrapper((fd) => {
 const createSelect = withFieldWrapper((fd) => {
   const select = document.createElement('select');
   select.required = fd.required;
-  select.title = fd.tooltip ? stripTags(fd.tooltip, '') : ''; // lovely change here
+  select.title = fd.tooltip ? stripTags(fd.tooltip, '') : ''; 
   select.readOnly = fd.readOnly;
   select.multiple = fd.type === 'string[]' || fd.type === 'boolean[]' || fd.type === 'number[]';
   let ph;
@@ -269,8 +270,11 @@ function inputDecorator(field, element) {
   if (input) {
     input.id = field.id;
     input.name = field.name;
-    if (field.tooltip && !field.properties.alwaysShowShortDescription) {//lovely change here
+    if (field.tooltip && !field.properties?.alwaysShowShortDescription) {//lovely change here
       input.title = stripTags(field.tooltip, '');
+    }
+    if (field.properties?.alwaysShowShortDescription) {
+      field.append(createShortDescription(field));
     }
     input.readOnly = field.readOnly;
     input.autocomplete = field.autoComplete ?? 'off';
