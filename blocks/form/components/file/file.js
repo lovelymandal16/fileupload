@@ -151,7 +151,7 @@ function fileElement(file, index) {
 function createDragAndDropArea(wrapper, field) {
   const input = wrapper.querySelector('input');
   let customButtonText = field?.properties?.["fd:buttonText"] || fileAttachmentText;
-  let customDragDropText = field?.properties?.["dragDropText"] || dragDropText;
+  let customDragDropText = field?.properties?.dragDropText || dragDropText;
   const dragArea = `
     <div class="file-dragIcon"></div>
     <div class="file-dragText">${customDragDropText}</div>
