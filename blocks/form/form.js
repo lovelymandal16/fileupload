@@ -274,7 +274,7 @@ function inputDecorator(field, element) {
       input.title = stripTags(field.tooltip, '');
     }
     if (field.properties?.alwaysShowShortDescription) {
-      field.append(createShortDescription(field));
+      element.append(createShortDescription(field));
     }
     input.readOnly = field.readOnly;
     input.autocomplete = field.autoComplete ?? 'off';
