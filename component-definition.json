@@ -326,7 +326,7 @@
                   "type": "file",
                   "enabled": true,
                   "visible": true,
-                  "alwaysShowShortDescription": true
+                  "alwaysShowShortDescription": false
                 }
               }
             }

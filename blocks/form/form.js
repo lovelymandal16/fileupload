@@ -68,7 +68,7 @@ const createTextArea = withFieldWrapper((fd) => {
 const createSelect = withFieldWrapper((fd) => {
   const select = document.createElement('select');
   select.required = fd.required;
-  select.title = fd.tooltip ? stripTags(fd.tooltip, '') : '';
+  select.title = fd.tooltip ? stripTags(fd.tooltip, '') : ''; // lovely change here
   select.readOnly = fd.readOnly;
   select.multiple = fd.type === 'string[]' || fd.type === 'boolean[]' || fd.type === 'number[]';
   let ph;
@@ -269,7 +269,7 @@ function inputDecorator(field, element) {
   if (input) {
     input.id = field.id;
     input.name = field.name;
-    if (field.tooltip) {
+    if (field.tooltip && !field.properties.alwaysShowShortDescription) {//lovely change here
       input.title = stripTags(field.tooltip, '');
     }
     input.readOnly = field.readOnly;
