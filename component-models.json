@@ -1344,6 +1344,13 @@
             "valueType": "boolean"
           },
           {
+            "component": "boolean",
+            "name": "allowMultiple",
+            "label": "Allow multiple file attachments",
+            "valueType": "boolean",
+            "collapsible": false
+          },
+          {
             "component": "text",
             "name": "buttonText",
             "label": "Button Title",
@@ -1356,13 +1363,6 @@
             "valueType": "string"
           }
         ]
-      },
-      {
-        "component": "boolean",
-        "name": "allowMultiple",
-        "label": "Allow multiple file attachments",
-        "valueType": "boolean",
-        "collapsible": false
       },
       {
         "component": "container",
